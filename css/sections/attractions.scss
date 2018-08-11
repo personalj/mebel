@@ -1,0 +1,58 @@
+.attractions  {
+	background: url('../img/benefits_bg.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	margin-bottom: 90px;
+	.section-title {
+		margin-bottom: 45px;
+	}
+}
+.attraction {
+	&__img {
+		margin-bottom: 45px;
+		box-shadow: 2px 20px 30px 0 #d5d5d1;
+		img {
+			border-radius: 5px;
+			display: block;
+		}
+	}
+	&__text {
+		padding-left: 130px;
+		font-family: "OpenSansLight";
+		font-size: 1.0625rem;
+		line-height: 30px;
+		// max-height: 125px;
+		// overflow: hidden;
+		span {
+			font-family: "OpenSansBold";
+		}
+	}
+}
+.attractions__slider .lSPager.lSpg {
+	display: none;
+}
+.attractions__slider .lSAction > a {
+	top: 83%;
+	opacity: 1;
+	transition: .3s;
+	&:hover, &:active {
+		filter: grayscale(0);
+	}
+} 
+.attractions__slider .lSAction > .lSPrev, .attractions__slider .lSAction > .lSNext {
+	background-image: url('../img/spritesheet.png');
+	background-repeat: no-repeat;
+	width: 40px;
+	height: 40px;
+	filter: grayscale(100%);
+}
+.attractions__slider .lSAction > .lSPrev {
+	background-position: -7px -159px;
+	left: 0;
+}
+.attractions__slider .lSAction > .lSNext {
+	background-position: -172px -105px;
+	left: 60px;
+}
+.section-title-attraction {
+	display: none;
+}

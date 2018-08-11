@@ -1,0 +1,27 @@
+// layout //
+
+@import "layout/adjustments";
+@import "layout/fonts";
+@import "layout/lightslider";
+@import "layout/jquery.fancybox";
+@import "layout/icons";
+@import "layout/animation";
+
+// section //
+
+@import "sections/header";
+@import "sections/features";
+@import "sections/benefits";
+@import "sections/promotion";
+@import "sections/guarantees";
+@import "sections/cases";
+@import "sections/certificates";
+@import "sections/attractions";
+@import "sections/questions";
+@import "sections/contacts";
+@import "sections/footer";
+
+// media //
+
+@import "media/tablet";
+@import "media/mobile";

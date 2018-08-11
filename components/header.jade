@@ -1,0 +1,37 @@
+.header
+	.header__top
+		.container
+			.header__logo
+				a(href="#").logo
+					img(src="img/logo.png" alt="")
+			.header__contacts
+				a(href="tel:+74957254226").contacts__tel
+					| +7 495 725-42-26
+				a(href="#contact-pop-up").contacts__callback-btn.fancybox.iframe
+					| Обратный  звонок
+	.header__middle
+		.container
+			h1.header__title
+				| Мебельные туры в Китай
+			.header__sub-title
+				| c бесплатным гидом и переводчиком
+			.header__text
+				p 5-10 дневная поездка в центр мебельной индустрии Китая
+	.header__form
+		.container
+			.contact-form.animate-effect
+				form.contact-form__tag
+					.contact-form__title
+						| заполните форму и Получите:
+					ul.contact-form__list
+						li.contact-form__item
+							|  Бесплатную консультацию
+						li.contact-form__item
+							|  Помощь при просчете стоимости
+						li.contact-form__item
+							|  Каталог мебели
+					input(type="text" name="name" placeholder="Ваше имя" required).contact-form__input
+					input(type="tel" name="tel" placeholder="Телефон" required).contact-form__input
+					input(type="text" name="email" placeholder="E-mail" required).contact-form__input
+					input(type="submit" name="submit" value="Отправить заявку").contact-form__btn
+

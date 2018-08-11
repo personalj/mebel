@@ -1,0 +1,41 @@
+.certificates {
+	padding: 70px 0 0;
+	margin-bottom: 100px;
+	position: relative;
+	.section-title {
+		margin-bottom: 40px;
+	}
+	&__wrap {
+		padding: 0 85px;
+	}
+	&__col-wrap {
+		@extend %clearfix;
+		margin: 0 -25px;
+	}
+	&:after {
+		content: '';
+		position: absolute;
+		width: 448px;
+		height: 800px;
+		background: url('../img/flower1.png') 50% 50% no-repeat;
+		right: 0;
+		top: 0;
+		z-index: 1;
+		opacity: .54;
+	}
+}
+.certificate {
+	text-align: center;
+	&__link {
+		display: inline-block;
+		img {
+			-webkit-box-shadow: 2px 20px 30px 0 #d5d5d1;
+			box-shadow: 2px 20px 30px 0 #d5d5d1;
+		}
+	}
+}
+@media all and (max-width: 1440px) { 
+	.certificates:after {
+		display: none;
+	}
+}

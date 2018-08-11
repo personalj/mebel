@@ -1,0 +1,125 @@
+.cases {
+	padding: 60px 0 50px;
+	background: url('../img/cases_bg.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	.section-title {
+		margin-bottom: 50px;
+	}
+	&__slider-switchers {
+		padding-bottom: 65px;
+	}
+}
+.product {
+	@extend %clearfix;
+	padding: 10px;
+	background: #ffffff;
+	&__img {
+		float: left;
+		width: 52%;
+		img {
+			max-width: 504px;
+		}
+	}
+	&__info {
+		float: left;
+		width: 48%;
+		padding: 25px 25px 0 40px;
+	}
+	&__descr {
+		font-family: "OpenSansLight";
+		font-size: 1.25rem;
+		line-height: 30px;
+		margin-bottom: 30px;
+		// max-height: 306px;
+		// overflow: hidden;
+		span {
+		  font-family: "OpenSansBold";
+		}
+	}
+}
+.product__feedback .feedback {
+	@extend %clearfix;
+	.feedback__avatar {
+		float: left;
+		img {
+			width: 81px;
+			height: 75px;
+			border-radius: 10px;
+		}
+	}
+	.feedback__text {
+		margin-left: 90px;
+		font-family: "OpenSansLight";
+		font-size: .875rem;
+		line-height: 22px;
+		position: relative;
+			&:after {
+				content: '';
+				position: absolute;
+				width: 54px;
+				height: 52px;
+				background-image: url('../img/spritesheet.png');
+				background-position: -172px -159px;
+				background-repeat: no-repeat;
+				bottom: 0;
+				right: 10px;
+			}
+			&-inner {
+				max-height: 65px;
+				overflow: hidden;
+				margin-bottom: 5px;
+			}
+	}
+	.feedback__author {
+		font-family: "OpenSansSemiBold";
+		color: $red-color;
+	}
+}
+.cases__slider .lSPager.lSpg {
+	display: none;
+}
+.cases__slider .lSAction > a {
+	top: 95%;
+	opacity: 1;
+	transition: .3s;
+	&:hover, &:active {
+		filter: grayscale(0);
+	}
+} 
+.cases__slider .lSAction > .lSPrev, .cases__slider .lSAction > .lSNext {
+	width: 40px;
+	height: 40px;
+	filter: grayscale(100%);
+	background-image: url('../img/spritesheet.png');
+	background-repeat: no-repeat;
+}
+.cases__slider .lSAction > .lSPrev {
+	background-position: -7px -159px;
+	left: 46%;
+}
+.cases__slider .lSAction > .lSNext {
+	background-position: -172px -105px;
+	right: 46%;
+}
+@media all and (max-width: 1030px) { 
+	.product__img {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.product__info {
+		float: none;
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.cases__slider .lSAction > a {
+		top: 97%;
+	}
+	.cases__slider .lSAction > .lSNext {
+		right: 40%;
+	}
+	.cases__slider  .lSAction > .lSPext {
+		left: 40%;
+	}
+}

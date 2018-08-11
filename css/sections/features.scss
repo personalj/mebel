@@ -1,0 +1,129 @@
+.features {
+	background: url('../img/benefits_bg.jpg') 50% 50% no-repeat;
+	background-size: cover;
+	margin-bottom: 100px;
+	.section-title {
+		margin-bottom: 70px;
+	}
+	&__col-wrap {
+		@extend %clearfix;
+		margin: 0 -15px 70px;
+	}
+	&__btn {
+		padding: 17px 25px;
+		display: inline-block;
+		border: 2px solid $red-color;
+		color: $red-color;
+		font-size: 1.1875rem;
+		font-family: "OpenSansSemiBold";
+		transform: translateX(-300%);
+		transition: transform 5s, background.3s;
+		&:hover, &:active {
+			background: $red-color;
+			color: #ffffff;
+		}
+		&-wrap {
+			text-align: center;
+		}
+	}
+}
+.feature {
+	&__img {
+		padding: 6px;
+		display: inline-block;
+		position: relative;
+		& img {
+			display: block;
+			width: 256px;
+			height: 256px;
+			border-radius: 50%;
+		}
+		&:after {
+			content: '';
+			position: absolute;
+			width: 117px;
+			height: 133px;
+			background: url('../img/benefits.png') 50% 50% no-repeat;
+			bottom: 0;
+			left: 0;
+		}
+		&-wrap {
+			text-align: center;
+			margin-bottom: 35px;
+		}
+	}
+	&__title {
+		text-align: center;
+		font-family: "OpenSansLight";
+		font-size: 1.75rem;
+		padding-bottom: 40px;
+		margin-bottom: 30px;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			background: url('../img/benefits_title.png') 50% 50% no-repeat;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			height: 20px;
+		}
+		&_bold {
+			font-family: "OpenSansSemiBold";
+			animation-name: bounce;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+			height: 78px;
+		}
+	}
+	&__list-item {
+		font-size: 1.125rem;
+		padding-left: 25px;
+		margin-bottom: 40px;
+		position: relative;
+		&:after {
+			content: '';
+			position: absolute;
+			height: 10px;
+			width: 9px;
+			background: $red-color;
+			top: 50%;
+			left: 1px;
+			margin-top: -5px;
+		}
+	}
+	&__result {
+		padding-left: 25px;
+		&-title {
+			font-family: "OpenSansBold";
+			font-size: 1.125rem;
+			color: $red-color;
+			margin-bottom: 15px;
+		}
+		&-text {
+			font-family: "OpenSansSemiBold";
+			font-size: 1.125rem;
+			line-height: 30px;
+		}
+	}
+}
+.feature__img_left {
+	position: relative;
+	&:after {
+		content: '';
+		left: 56%;
+		top: 0;
+		transform: rotate(180deg);
+	}
+}
+@media all and (max-width: 992px) { 
+	.feature__title {
+		font-size: 1.4rem;
+	}
+	.feature__item-list {
+		font-size: .935rem;
+	}
+}
+.features.animate-bottom .features__btn {
+	transform: translateX(0);
+}

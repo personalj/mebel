@@ -1,0 +1,183 @@
+.benefits {
+	position: relative;
+	margin-bottom: 60px;
+	&:after {
+		content: '';
+		position: absolute;
+		width: 448px;
+		height: 1170px;
+		background: url('../img/flower1.png') 50% 50% no-repeat;
+		right: 0;
+		top: -400px;
+		z-index: 1;
+		opacity: .54;
+	}
+		&:before {
+		content: '';
+		position: absolute;
+		width: 451px;
+		height: 574px;
+		background: url('../img/flower2.png') 50% 50% no-repeat;
+		left: 0;
+		bottom: 600px;
+		z-index: 2;
+		opacity: .54;
+	}
+	.section-title {
+		margin-bottom: 70px;
+	}
+	&__item {
+		padding: 15px 0;
+		&:nth-child(even) {
+			/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f7f7f6+36,fcfbfb+68,fdfdfd+100 */
+			background: #ffffff; /* Old browsers */
+			background: -moz-linear-gradient(left,  #ffffff 0%, #f7f7f6 36%, #fcfbfb 68%, #fdfdfd 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(left,  #ffffff 0%,#f7f7f6 36%,#fcfbfb 68%,#fdfdfd 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to right,  #ffffff 0%,#f7f7f6 36%,#fcfbfb 68%,#fdfdfd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#fdfdfd',GradientType=1 ); /* IE6-9 */
+			.benefits__img img {
+				left: 6px;
+			}
+			.benefits__icon {
+				left: -2px;
+			}
+		}
+		&_bigger {
+			padding: 20px 0;
+		}
+	}
+	&__col-wrap {
+		@extend %clearfix;
+		margin: 0 -15px;
+	}
+	&__col-img {
+		float: left;
+		width: 31%;
+		padding: 0 15px;
+		&.fl-right {
+			float: right;
+		}
+	}
+	&__col-text {
+		padding: 70px 15px 0;
+		float: left;
+		width: 69%;
+	}
+	&__title {
+		font-family: "OpenSansSemiBold";
+		font-size: 1.8125rem;
+		margin-bottom: 15px;
+		text-transform: uppercase;
+	}
+	&__text {
+	 	font-family: "OpenSansLight";
+		font-size: 1.25rem;
+		line-height: 30px;
+	}
+	&__img {
+		width: 280px;
+		height: 280px;
+		border-radius: 50%;
+		position: relative;
+		background: #e9ebea;
+		img {
+			position: absolute;
+			width: 230px;
+			height: 230px;
+			border-radius: 50%;
+			top: 35px;
+			right: 10px;
+		}
+	}
+	&__icon {
+		width: 103px;
+		height: 103px;
+		border-radius: 50%;
+		position: absolute;
+		bottom: 10px;
+		right: -2px;
+		z-index: 10;
+		text-align: center;
+		font-size: 0;
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ef594f+0,ed2f2a+100 */
+		background: #ef594f; /* Old browsers */
+		background: -moz-linear-gradient(top,  #ef594f 0%, #ed2f2a 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top,  #ef594f 0%,#ed2f2a 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom,  #ef594f 0%,#ed2f2a 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef594f', endColorstr='#ed2f2a',GradientType=0 ); /* IE6-9 */
+		-webkit-box-shadow: 0 2px 0 0 #c61d00;
+		box-shadow: 0 2px 0 0 #c61d00;
+		&:before {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			height: 100%;
+		}
+	}
+}
+.benefits__item_bigger  {
+	.benefits__img {
+		width: 350px;
+		height: 350px;
+	}
+	.benefits__col-img {
+		width: 38%;
+		img {
+			top: 40px;
+			left: 12px !important;
+			width: 290px;
+			height: 290px;
+		}
+	}
+	.benefits__col-text {
+		width: 62%;
+	}
+	.benefits__icon {
+		width: 135px;
+		height: 135px;
+	}
+}
+.benefits .icons {
+	vertical-align: middle;
+	margin-top: 4px;
+}
+.benefits.animate-bottom .benefits__text {
+	animation-name: appear-left;
+	animation-duration: 5s;
+}
+.benefits.animate-bottom .benefits__item:nth-child(odd) .benefits__text {
+	animation-name: appear-right;
+	animation-duration: 5s;
+}
+@media all and (max-width: 1440px) { 
+	.benefits:before, .benefits:after {
+		display: none;
+	}
+}
+@media all and (max-width: 1030px) { 
+	.benefits__col-img {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.benefits__col-text {
+		padding-top: 25px;
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+	.benefits__col-img.fl-right {
+		float: none;
+		width: 100%;
+	}
+	.benefits__col-text.text-right {
+		float: none;
+		width: 100%;
+	}
+	.benefits__img {
+		display: inline-block;
+	}
+	.benefits__item {
+		margin-bottom: 40px;
+	}
+}

@@ -1,0 +1,76 @@
+@media all and (max-width: 768px) { 
+	.header {
+		text-align: center;
+	}
+	.header__logo {
+		float: none;
+		margin-bottom: 25px;
+	}
+	.header__contacts {
+		float: none;
+	}
+	.header__title {
+		font-size: 3.2rem;
+		line-height: 4rem;
+	}
+	.features__col-wrap .col-2x {
+		float: none;
+		width: 100%;
+	}
+	.feature {
+		margin-bottom: 40px;
+	}
+	.promotion__list, .promotion__form {
+		width: 100%;
+		float: none;
+	}
+	.promotion__form {
+		border: 0;
+		padding-left: 0;
+	}
+	.product__img img {
+		max-width: 100%;
+	}
+	.cases__slider .lSAction > .lSNext, .attractions .lSAction > .lSNext  {
+		display: none;
+	}
+	.cases__slider .lSAction > .lSPrev, .attractions .lSAction > .lSPrev  {
+		display: none;
+	}
+	.cases__slider-switchers {
+		display: none;
+	}
+	.certificates {
+		.col-3x {
+			float: none;
+			width: 100%;
+		}
+	}
+	.certificates__wrap {
+		padding: 0;
+	}
+	.certificate {
+		margin-bottom: 25px;
+	}
+	.attraction__text {
+		padding-left: 0;
+	}
+	.attractions__slider .lSPager.lSpg, .cases__slider .lSPager.lSpg {
+		display: block;
+	}
+	.lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
+		background: $red-color;
+	}
+	.footer__contacts, .footer__logo {
+		text-align: center;
+		float: none;
+		width: 100%;
+	}
+	.footer__contacts {
+		margin-top: 25px;
+		padding: 0;
+	}
+	.header, .promotion, .questions {
+		background-attachment: scroll;
+	}
+}
